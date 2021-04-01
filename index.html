@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/dc226d21eb.js" crossorigin="anonymous"></script>
     <title>HTML5</title>
  </head>
 <body class="page-body">
@@ -19,34 +20,36 @@
             <li><a href="">Contact us</a></li>
         </ul>
     </nav>
-    <button class="search-button" type="button"><i class="fa-search"></i></button>
+    <button class="search-button" type="button"><i class="fas fa-search"></i></button>
 </header>
 <main>
     <section class="heading">
+        <div class="background-image">
+        </div>
         <h1>Web development project</h1>
         <p>Very suitable to support all web development projects</p>
         <div class="heading-buttons-block">
-            <a class="button heading-button" type="button">Our services</a>
-            <a class="button heading-button" type="button">Hire is now</a>
+            <a href="#" class="button heading-button" >Our services</a>
+            <a href="#" class="button heading-button" >Hire is now</a>
         </div>
-        <button class="heading-arrow" type="button">></button>
+        <button class="heading-arrow" type="button"><i class="fas fa-angle-down"></i></button>
     </section>
     <section class="about container">
         <h2>About us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="features">
             <div class="feature-item">
-                <img src="/img/awesome.png">
+                <img src="/img/awesome.png" alt="">
                 <h3>Awesome icons</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
             </div>
-            <div class="feature-item">
-                <img src="/img/onepage.png">
+            <div class="feature-item" >
+                <img src="/img/onepage.png" alt="">
                 <h3>One page</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
             </div>
             <div class="feature-item">
-                <img src="/img/responsive.png">
+                <img src="/img/responsive.png" alt="">
                 <h3>Fully Responsive</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
             </div>
@@ -105,49 +108,49 @@
         </div>
         <div class="latest-list">
             <a href="#" class="latest-item">
-                <img src="/img/watch.jpg">
+                <img src="/img/watch.jpg" alt="Hand watch ui/ux design">
                 <div>
                     <h3>Hand Watch</h3>
                     <p>ui/ux design</p>
                 </div>
             </a>
             <a href="#" class="latest-item">
-                <img src="/img/bag.jpg">
+                <img src="/img/bag.jpg" alt="handbag">
+                <div>
+                    <h3>Hand Watch</h3>
+                    <p>ui/ux design</p>
+                </div>
+            </a>
+            <a href="#" class="latest-item" >
+                <img src="/img/flask.jpg" alt="flask">
                 <div>
                     <h3>Hand Watch</h3>
                     <p>ui/ux design</p>
                 </div>
             </a>
             <a href="#" class="latest-item">
-                <img src="/img/flask.jpg">
+                <img src="/img/onedaypass.jpg" alt="onedaypass">
                 <div>
                     <h3>Hand Watch</h3>
                     <p>ui/ux design</p>
                 </div>
             </a>
             <a href="#" class="latest-item">
-                <img src="/img/onedaypass.jpg">
+                <img src="/img/tshirt.jpg" alt="tshirt">
                 <div>
                     <h3>Hand Watch</h3>
                     <p>ui/ux design</p>
                 </div>
             </a>
             <a href="#" class="latest-item">
-                <img src="/img/tshirt.jpg">
-                <div>
-                    <h3>Hand Watch</h3>
-                    <p>ui/ux design</p>
-                </div>
-            </a>
-            <a href="#" class="latest-item">
-                <img src="/img/wine.jpg">
+                <img src="/img/wine.jpg" alt="wine">
                 <div>
                     <h3>Hand Watch</h3>
                     <p>ui/ux design</p>
                 </div>
             </a>
         </div>
-        <a href="#" class="button button-latest-more" type="button">View All</a>
+        <a href="#" class="button button-latest-more" >View All</a>
 
 
     </section>
@@ -197,41 +200,41 @@
         </div>
     </section>
     <section class="team container">
-        <h3>Our Team Member</h3>
+        <h2>Our Team Member</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="team-list">
             <div class="team-member">
-                <img src="/img/johndoe.jpg">
-                <p>John Doe</p>
+                <img src="/img/johndoe.jpg" alt="General Manager John Doe">
+                <h3>John Doe</h3>
                 <p>General Manager</p>
-                <ul>
-                    <li><a href="#"><i class="">Facebook</i></a></li>
-                    <li><a href="#"><i class="">Twitter</i></a></li>
-                    <li><a href="#"><i class="">Hangouts</i></a></li>
-                    <li><a href="#"><i class="">Internet</i></a></li>
-                </ul>
+                <div class="team-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-comments"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a> 
+                </div>
             </div>
             <div class="team-member">
-                <img src="/img/alexabiru.jpg">
-                <p>Alexa Biru</p>
+                <img src="/img/alexabiru.jpg" alt="Office Director Alexa Biru">
+                <h3>Alexa Biru</h3>
                 <p>Office Director</p>
-                <ul>
-                    <li><a href="#"><i class="">Facebook</i></a></li>
-                    <li><a href="#"><i class="">Twitter</i></a></li>
-                    <li><a href="#"><i class="">Hangouts</i></a></li>
-                    <li><a href="#"><i class="">Internet</i></a></li>
-                </ul>
+                <div class="team-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-comments"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a> 
+                </div>
             </div>
             <div class="team-member">
-                <img src="/img/ronobirsing.jpg">
-                <p>Ronobir Sing</p>
+                <img src="/img/ronobirsing.jpg" alt="Admin Ronobir Sing">
+                <h3>Ronobir Sing</h3>
                 <p>Admin</p>
-                <ul>
-                    <li><a href="#"><i class="">Facebook</i></a></li>
-                    <li><a href="#"><i class="">Twitter</i></a></li>
-                    <li><a href="#"><i class="">Hangouts</i></a></li>
-                    <li><a href="#"><i class="">Internet</i></a></li>
-                </ul>
+                <div class="team-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-comments"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a> 
+                </div>
             </div>
         </div>
         <div class="slider-buttons">
@@ -243,22 +246,28 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="blog-list">
             <div class="blog-item">
-                <img src="">
-                <p>14.07.2017</p>
-                <p>Development</p>
-                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                <img src="/img/blog-1.jpg" alt="Seo">
+                <div>
+                    <p class="blog-date">14.07.2017</p>
+                    <p class="blog-tag">Development</p>
+                    <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                </div>
             </div>
             <div class="blog-item">
-                <img src="">
-                <p>14.07.2017</p>
-                <p>Development</p>
-                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                <img src="/img/blog-2.jpg" alt="Mac and ipad">
+                <div>
+                    <p>14.07.2017</p>
+                    <p>Development</p>
+                    <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                </div>
             </div>
             <div class="blog-item">
-                <img src="">
-                <p>14.07.2017</p>
-                <p>Development</p>
-                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                <img src="/img/blog-3.jpg" alt="Mac and ipad again">
+                <div>
+                    <p>14.07.2017</p>
+                    <p>Development</p>
+                    <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                </div>
             </div>
             <button class="button button-blog" type="button">More view</button>
         </div>
@@ -285,7 +294,7 @@
         <form class="contacts-form">
             <input type="text" placeholder="Your NAME" name="name">
             <input type="email" placeholder="Your EMAIL" name="email">
-            <textarea type="textarea" rows="10" name="message">Write Message</textarea>
+            <textarea rows="10" name="message">Write Message</textarea>
             <button type="submit">Send</button>
         </form>
     </section>

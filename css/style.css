@@ -38,10 +38,6 @@ h2 {
 }
 .container {
     padding: 125px 115px;
-    /*padding-right: 115px;
-    padding-left: 115px;
-    padding-bottom: 125px;
-    padding-top: 125px;*/
     text-align: center;
 }
 .container h2 {
@@ -86,7 +82,9 @@ h2 {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-    height: fit-content;
+    height: 25px;
+    width:25px;
+    margin-left: 30px;
 }
  /* H! and background */
 .heading {
@@ -94,18 +92,20 @@ h2 {
     position: relative;
     height: 655px;
     text-align: center;
-    padding-top:180px;
+    padding-top:140px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .heading::before {
     z-index: -1;
     position: absolute;
+    display: block;
+    height:100%;
+    width: 100%;
     top:0;
     left:0;
     content: " ";
-    background-image: url("/img/background-1.jpg");
-    /*content: url("/img/background-1.jpg");*/
-
-    opacity: 0.45;   
+    background: url("/img/background-1.jpg");
+   /*content: url("/img/background-1.jpg");*/   
 }
 .heading h1, .heading p {
     color: var(--heading-color);
@@ -123,7 +123,6 @@ h2 {
     margin-bottom: 110px;
 }
 .heading-arrow {
-    transform: rotate(90deg);
     background: none;
 	color: inherit;
 	border: none;
@@ -192,14 +191,16 @@ h2 {
 .latest-list,
 .features,
 .services-list,
-.price-list {
+.price-list,
+.team-list  {
     display: flex;
     flex-wrap: wrap;
 }
 .latest-item, 
 .feature-item,
 .service-item,
-.price-item
+.price-item,
+.team-member 
  {
     width: 370px;
     margin-right: 30px;
@@ -208,7 +209,8 @@ h2 {
 .latest-item:nth-child(3n),
 .feature-item:nth-child(3n),
 .service-item:nth-child(3n),
-.price-item:nth-child(3n) {
+.price-item:nth-child(3n),
+.team-member:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -303,12 +305,14 @@ h2 {
     margin-bottom: 120px;
 }
 .button-latest {
-    margin-right:20px;
+    margin-right: 20px;
+}
+.latest-list {
+    margin-bottom: 120px;
 }
 
 .latest-item {
     position:relative;
-    margin-bottom: 130px;
 }
 
 .latest-item div {
@@ -386,4 +390,69 @@ h2 {
     border-bottom: 1px solid var(--price-item-divider-color);
     margin-left:100px;
     margin-right:100px;
+}
+
+.team-list {
+    text-align: center;
+}
+.team-member h3 {
+    font-size: 20px;
+}
+.team-member p:last-of-type {
+    margin-bottom: 30px;
+} 
+.team-member img {
+    width:370px;
+    height:320px;
+    border-radius: 10px;
+}
+.team-socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.team-socials a {
+    background-color: var(--pricing-background-color);
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right:25px;
+    width: 50px;
+    height: 50px;
+}
+.team-socials a:hover {
+    color: var(--heading-color);
+    background-color: var(--price-item-header-color);
+}
+.team-socials a:last-child {
+    margin-right: 0;
+}
+
+
+
+.blog {
+    background-color: var(--secondary-background-color);
+}
+.blog-list {
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.blog-item:nth-child(2n) img {
+    order:1;    
+}
+.blog-item {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.blog-date::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: url("/img/svg/calendar-alt-solid.svg");
+}
+.blog img {
+    width: 570px;
+    height: 400px;
 }

@@ -1,3 +1,19 @@
+let card = document.getElementsByClassName("latest-item");
+console.log(card);
+[].forEach.call(card, (elem) => {
+    let mainLink = elem.querySelector(".latest-link");
+    console.log(mainLink);
+    elem.addEventListener("click", handleClick.bind(null, mainLink));
+})
+
+
+function handleClick(mainLink) {
+  const noTextSelected = !window.getSelection().toString();
+    console.log(event);
+  if (noTextSelected) {
+    mainLink.click();
+  }
+}
 
 
 function showSlides(number) {

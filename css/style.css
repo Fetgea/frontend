@@ -1,3 +1,5 @@
+@import "../css/reseter.css";
+
 :root {
     --primary-white: white;
     --secondary-cold-white: #f8f8f8;
@@ -9,53 +11,63 @@
     --price-item-divider-color: #bfbfbf;
     --latest-items-hover: rgba(0, 0, 0, 0.45);
 }
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: black;
+}
 
-a {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
-    color: inherit;
+    transition: color 0.5s;
 }
 
 h2 {
     font-size: 30px;
     font-weight: bold;
+    line-height: 22px;
     margin-top: 0;
 }
 
 h3 {
     font-size: 20px;
     font-weight: 600;
+    line-height: 22px;
     margin-top: 0;
 }
 
-.page-body {
-    width: 1400px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    background-color: #ffffff;
-    color: black;
-}
+
 
 .container {
     padding: 125px 115px;
     text-align: center;
+    width: 1400px;
+    margin: 0 auto;
 }
 
 .container h2 {
     margin-bottom: 35px;
 }
 
-.container>p {
+.container > p {
     margin: 0 270px;
 }
 
-.container>p:last-of-type {
+.container > p:last-of-type {
     margin-bottom: 120px;
 }
 
 /* Header */
 .header {
     min-height: 120px;
+    width: 1400px;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -68,7 +80,12 @@ h3 {
         -ms-flex-align: center;
             align-items: center;
 }
-
+.header a {
+    color: var(--primary-black);
+}
+.header a:hover {
+    color: var(--primary-blueish-green);
+}
 .header-logo {
     margin-right: auto;
     font-size: 25px;
@@ -87,6 +104,7 @@ h3 {
     list-style: none;
     font-size: 20px;
     font-weight: 600;
+    margin: 0;
 }
 
 .navigation-list li:not(:last-child) {
@@ -126,7 +144,9 @@ h3 {
     top: 0;
     left: 0;
     content: " ";
-    background: url("/img/background-1.jpg");
+    background: url("../img/background-1-1.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
 }
 
 .heading h1,
@@ -177,10 +197,12 @@ h3 {
     background-color: transparent;
     text-transform: uppercase;
     padding: 0;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
 
 .button:hover {
     background-color: var(--primary-blueish-green);
+    color:inherit;
 }
 
 .button:active,
@@ -191,15 +213,17 @@ h3 {
 .heading-button {
     width: 222px;
     height: 73px;
-    line-height: 73px;
     margin-bottom: 100px;
     color: var(--primary-white);
     border: 3px solid var(--secondary-cold-white);
-
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading-button:hover {
     border: 3px solid var(--primary-blueish-green);
+    color: var(--primary-white);
 }
 
 .heading-button:first-of-type {
@@ -212,7 +236,9 @@ h3 {
     color: var(--primary-black);
     width: 150px;
     height: 55px;
-    line-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-item:hover .service-list-button {
@@ -225,7 +251,6 @@ h3 {
     color: var(--primary-black);
     min-width: 180px;
     height: 55px;
-    line-height: 55px;
 }
 
 .button-latest:hover {
@@ -237,7 +262,9 @@ h3 {
     height: 70px;
     line-height: 70px;
 }
-
+.button-latest-more:hover {
+    color: var(--primary-white)
+}
 .button.button-latest.active,
 .button-latest-more {
     background-color: var(--primary-blueish-green);
@@ -299,18 +326,23 @@ h3 {
 .about {
     color: var(--primary-black);
     text-align: center;
-    padding-top: 125px;
 }
 
 .feature-item {
     text-align: center;
+    padding: 0 50px;
+}
+.feature-item h3 {
+    margin: 40px 0 25px 0;
 }
 
 /* Services */
 .services {
     background-color: var(--primary-light-cyan);
-    padding-top: 174px;
     text-align: center;
+}
+.services .container {
+    padding-top: 174px;
 }
 
 .services h2 {
@@ -334,7 +366,7 @@ h3 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-bottom: 33px;
-    padding: 60px 30px 50px 30px;
+    padding: 60px 50px 50px 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -346,18 +378,24 @@ h3 {
         -ms-flex-align: center;
             align-items: center;
     background-color: var(--primary-white);
+    transition: background-color 0.5s;
 }
-
-
+.service-item h3 {
+    margin: 0 0 25px 0;
+}
+.service-item p {
+    line-height: 25px;
+}
 .service-item p:last-of-type {
     margin-bottom: 40px;
 }
+
 
 .service-item h3::before {
     content: " ";
     display: block;
     margin: 0 auto 40px auto;
-    background-image: url("/img/service-icon.png");
+    background-image: url("../img/service-icon.png");
     height: 67px;
     width: 62px;
 
@@ -404,6 +442,7 @@ h3 {
     position: relative;
 }
 
+
 .latest-item,
 .latest-item img {
     width: 370px;
@@ -424,6 +463,7 @@ h3 {
 
 
 .latest-item:hover div {
+    cursor: pointer;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -438,14 +478,15 @@ h3 {
         -ms-flex-align: center;
             align-items: center;
 }
-
+.latest-item a {
+    color: var(--primary-white);
+}
 /* Pricing */
 .pricing {
     background-color: var(--pricing-background-color);
 }
 
 .price-item {
-
     background-color: var(--primary-white);
     overflow: hidden;
     padding-bottom: 63px;
@@ -477,6 +518,8 @@ h3 {
 
 .price-header h3 {
     font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 32px 0;
 }
 
 .price-header p {
@@ -489,6 +532,7 @@ h3 {
 
 .superscript {
     font-size: 25px;
+    vertical-align: middle;
 }
 
 .price-header h3,
@@ -505,10 +549,11 @@ h3 {
 .price-item ul {
     list-style: none;
     padding: 0;
-    margin-bottom: 60px;
+    margin: 50px 0 60px 0;
 }
 
 .price-item ul li {
+    font-weight: 300;
     line-height: 28px;
     padding-bottom: 10px;
     margin-bottom: 30px;
@@ -548,6 +593,7 @@ h3 {
 
 .team-socials a {
     background-color: var(--pricing-background-color);
+    color: var(--primary-blueish-green);
     font-size: 25px;
     line-height: 50px;
     text-align: center;
@@ -556,7 +602,9 @@ h3 {
     margin-bottom: 125px;
     width: 50px;
     height: 50px;
+    transition: background-color 0.5s, color 0.5s;
 }
+
 
 .team-socials a:hover {
     color: var(--primary-white);
@@ -566,7 +614,9 @@ h3 {
 .team-socials a:last-child {
     margin-right: 0;
 }
-
+.team-socials a span {
+    cursor: inherit;
+}
 .slider-buttons {
     margin: 0 auto;
 }
@@ -580,6 +630,7 @@ h3 {
     margin-right: 9px;
     border-radius: 50%;
     background-color: var(--primary-blueish-green);
+    transition: background-color 0.5s;
 }
 
 .slider-dot.active,
@@ -597,7 +648,7 @@ h3 {
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: .2
     }
 
     to {
@@ -607,7 +658,7 @@ h3 {
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: .2
     }
 
     to {
@@ -633,6 +684,7 @@ h3 {
 .blog {
     background-color: var(--primary-light-cyan);
 }
+
 
 .blog-list {
     display: -ms-flexbox;
@@ -671,14 +723,18 @@ h3 {
     padding-left: 30px;
 
 }
-
+.blog-text a {
+    color: var(--primary-black);
+    cursor: pointer;
+}
 .blog-text a:hover {
     color: var(--primary-blueish-green);
 }
 
 .blog-text h3 {
     font-size: 25px;
-    margin-bottom: 0;
+    margin: 0 0 30px 0;
+    cursor: inherit;
 }
 
 .blog-date,
@@ -701,11 +757,11 @@ h3 {
 }
 
 .blog-date::before {
-    content: url("/img/svg/calendar-alt-solid.svg");
+    content: url("../img/svg/calendar-alt-solid.svg");
 }
 
 .blog-tag::before {
-    content: url("/img/svg/file-regular.svg");
+    content: url("../img/svg/file-regular.svg");
 }
 
 .blog img {
@@ -722,7 +778,6 @@ h3 {
     position: relative;
     height: 1256px;
     text-align: center;
-    padding-top: 140px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -735,7 +790,9 @@ h3 {
     top: 0;
     left: 0;
     content: " ";
-    background: url("/img/background-2.jpg");
+    background: url("../img/background-2-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contact-list {
@@ -752,17 +809,23 @@ h3 {
 .contact-item {
     width: 330px;
     margin-right: 70px;
+    line-height: 28px;
 }
 
 .contact-item:nth-child(3n+2) {
     width: 230px;
 }
-
+.contact-item a {
+    color:inherit;
+}
+.contact-item a:hover {
+    color:var(--primary-blueish-green);
+}
 .contact-icon {
     height: 105px;
     width: 105px;
     content: " ";
-    margin: 0 auto;
+    margin: 0 auto 36px auto;
     border-radius: 50%;
     background-color: var(--secondary-blue);
     background-repeat: no-repeat;
@@ -776,15 +839,15 @@ h3 {
 }
 
 .contact-icon.geo {
-    background-image: url("/img/svg/geo.svg");
+    background-image: url("../img/svg/geo.svg");
 }
 
 .contact-icon.phone {
-    background-image: url("/img/svg/phone.svg");
+    background-image: url("../img/svg/phone.svg");
 }
 
 .contact-icon.email {
-    background-image: url("/img/svg/envelope.svg");
+    background-image: url("../img/svg/envelope.svg");
 }
 
 
@@ -798,10 +861,14 @@ h3 {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea, 
+.contact-form button {
     font-size: 20px;
     font-weight: 600;
+    line-height: 28px;
+    color: var(--primary-black);
     border-radius: 10px;
+    background-color: var(--primary-white);
 }
 
 .contact-form input:focus,
@@ -811,7 +878,6 @@ h3 {
 
 .contact-form input[type=text] {
     margin-right: 30px;
-
 }
 
 .contact-form input[type=text],
@@ -829,6 +895,7 @@ h3 {
 }
 
 .contact-form textarea {
+    height: 320px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 30px 20px;
@@ -843,7 +910,7 @@ h3 {
 .contact-form button[type=submit] {
     background-color: var(--primary-white);
     border-radius: 10px;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
     min-width: 220px;
     height: 72px;
     margin-left: auto;
@@ -856,5 +923,9 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 20px;
+    height: 64px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

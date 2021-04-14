@@ -25,8 +25,6 @@ a:visited,
 a:hover,
 a:active {
     text-decoration: none;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
     transition: color 0.5s;
 }
 
@@ -70,17 +68,11 @@ h3 {
     min-height: 120px;
     width: 1400px;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    justify-content: end;
     padding-left: 100px;
     padding-right: 100px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
 }
 .header a {
     color: var(--primary-black);
@@ -100,8 +92,6 @@ h3 {
 }
 
 .navigation-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     list-style: none;
     font-size: 20px;
@@ -128,8 +118,7 @@ h3 {
 
 /* H! and background */
 .heading {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     position: relative;
     height: 655px;
     text-align: center;
@@ -160,9 +149,7 @@ h3 {
 .heading h1 {
     font-size: 60px;
     font-weight: 600;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
     margin-bottom: 40px;
 }
 
@@ -199,14 +186,12 @@ h3 {
     background-color: transparent;
     text-transform: uppercase;
     padding: 0;
-    -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
-    -o-transition: background-color 0.5s, border 0.5s, color 0.5s;
     transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
 
 .button:hover {
     background-color: var(--primary-blueish-green);
-    color:inherit;
+    color: inherit;
 }
 
 .button:active,
@@ -220,15 +205,9 @@ h3 {
     margin-bottom: 100px;
     color: var(--primary-white);
     border: 3px solid var(--secondary-cold-white);
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .heading-button:hover {
@@ -246,15 +225,9 @@ h3 {
     color: var(--primary-black);
     width: 150px;
     height: 55px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-item:hover .service-list-button {
@@ -276,10 +249,11 @@ h3 {
 .button-latest-more {
     min-width: 220px;
     height: 70px;
-    line-height: 70px;
+    line-height: 70px;;
 }
 .button-latest-more:hover {
-    color: var(--primary-white)
+    color: var(--primary-black);
+    background-color: var(--primary-white);
 }
 .button.button-latest.active,
 .button-latest-more {
@@ -293,15 +267,9 @@ h3 {
     height: 60px;
     color: var(--primary-black);
     border: 2px solid var(--primary-black);
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-pricing:hover {
@@ -319,11 +287,8 @@ h3 {
 .price-list,
 .team-list,
 .contact-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .latest-item,
@@ -378,32 +343,19 @@ h3 {
 }
 
 .services-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 
 .service-item {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin-bottom: 33px;
     padding: 60px 50px 50px 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--primary-white);
-    -webkit-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
     transition: background-color 0.5s;
 }
 .service-item h3 {
@@ -445,14 +397,9 @@ h3 {
 /*Latest items*/
 
 .latest-filter {
-    display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
     margin-bottom: 120px;
 }
 
@@ -490,19 +437,10 @@ h3 {
 
 .latest-item:hover div {
     cursor: pointer;
-    display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .latest-item a {
     color: var(--primary-white);
@@ -516,26 +454,17 @@ h3 {
     background-color: var(--primary-white);
     overflow: hidden;
     padding-bottom: 63px;
-    -webkit-transition: -webkit-box-shadow 0.5s;
-    transition: -webkit-box-shadow 0.5s;
-    -o-transition: box-shadow 0.5s;
     transition: box-shadow 0.5s;
-    transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 
 .price-item:hover {
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .price-header {
     background-color: var(--secondary-blue);
-    -webkit-transform: skewY(-4deg);
-        -ms-transform: skewY(-4deg);
-            transform: skewY(-4deg);
-    -webkit-transform-origin: left;
-        -ms-transform-origin: left;
-            transform-origin: left;
+    transform: skewY(-4deg);
+    transform-origin: left;
     position: relative;
     overflow: hidden;
     padding-top: 40px;
@@ -564,12 +493,8 @@ h3 {
 .price-header h3,
 .price-header p {
     color: var(--primary-white);
-    -webkit-transform: skewY(4deg);
-        -ms-transform: skewY(4deg);
-            transform: skewY(4deg);
-    -webkit-transform-origin: left;
-        -ms-transform-origin: left;
-            transform-origin: left;
+    transform: skewY(4deg);
+    transform-origin: left;
 }
 
 .price-item ul {
@@ -608,13 +533,9 @@ h3 {
 }
 
 .team-socials {
-    display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
     list-style: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 
 .team-socials a {
@@ -628,8 +549,6 @@ h3 {
     margin-bottom: 125px;
     width: 50px;
     height: 50px;
-    -webkit-transition: background-color 0.5s, color 0.5s;
-    -o-transition: background-color 0.5s, color 0.5s;
     transition: background-color 0.5s, color 0.5s;
 }
 
@@ -658,8 +577,6 @@ h3 {
     margin-right: 9px;
     border-radius: 50%;
     background-color: var(--primary-blueish-green);
-    -webkit-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
     transition: background-color 0.5s;
 }
 
@@ -703,8 +620,6 @@ h3 {
 }
 
 .carousel-item.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -717,27 +632,19 @@ h3 {
 
 
 .blog-list {
-    display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
 }
 
 .blog-item:nth-child(2n) img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
 }
 
 .blog-item {
     text-align: left;
-    display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
 }
 
 .blog-item:last-child {
@@ -803,8 +710,7 @@ h3 {
 
 .contacts {
     color: var(--primary-white);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     position: relative;
     height: 1256px;
     text-align: center;
@@ -846,7 +752,7 @@ h3 {
     width: 230px;
 }
 .contact-item a {
-    color:inherit;
+    color: inherit;
 }
 .contact-item a:hover {
     color:var(--primary-blueish-green);
@@ -883,11 +789,8 @@ h3 {
 
 /* Contacts Form*/
 .contact-form {
-    display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .contact-form input,
@@ -915,29 +818,24 @@ h3 {
     margin-bottom: 33px;
     padding-left: 20px;
     border: none;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     height: 84px;
     width: 500px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-
+    flex-shrink: 0;
 }
 
 .contact-form textarea {
     height: 320px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 30px 20px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 100%;
-            flex: 1 0 100%;
+    flex: 1 0 100%;
     resize: none;
     overflow: auto;
 
 }
 
 .contact-form button[type=submit] {
+    box-sizing: border-box;
     background-color: var(--primary-white);
     border-radius: 10px;
     margin: 40px 0 0 0;
@@ -946,6 +844,13 @@ h3 {
     margin-left: auto;
     font-size: 20px;
     font-weight: 600;
+    transition: color 1s, background-color 1s;
+}
+
+.contact-form button[type=submit]:hover {
+    background-color: var(--primary-blueish-green);
+    border: 1px solid var(--primary-blueish-green);
+    color: var(--primary-white);
 }
 
 /*Footer*/
@@ -955,13 +860,7 @@ h3 {
     font-size: 20px;
     height: 64px;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
 }

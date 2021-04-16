@@ -12,7 +12,6 @@ function handleClick(mainLink) {
     }
 }
 
-
 function showSlides(number) {
     let counter;
     let slides = document.getElementsByClassName("carousel-item");

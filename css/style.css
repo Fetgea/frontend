@@ -165,6 +165,7 @@ h3 {
 }
 
 .heading-arrow {
+    cursor: pointer;
     text-align: center;
     background: none;
     color: var(--primary-white);
@@ -177,6 +178,14 @@ h3 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+}
+
+.heading-arrow span {
+    cursor: pointer;
+}
+
+.heading-arrow:hover {
+    color: var(--primary-blueish-green);
 }
 
 /* Buttons */
